@@ -1,4 +1,4 @@
-# Object encode
+# Object Encode
 Sometimes you need to safely encode an object into a string and then decode it back into an object.
 
 # My Use Case
