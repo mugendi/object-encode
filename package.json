@@ -1,6 +1,6 @@
 {
   "name": "object-encode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encode your objects into simple string hashes that you can then pass around. Then decode them back with ease.",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,13 @@
   "devDependencies": {
     "assert": "^1.4.1",
     "log-symbols": "^1.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugendi/object-encode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mugendi/object-encode/issues"
+  },
+  "homepage": "https://github.com/mugendi/object-encode#readme"
 }
