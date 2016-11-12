@@ -45,14 +45,21 @@ console.log(decodedObject);
 ## API
 This module uses [juri](https://www.npmjs.com/package/juri) to encode/decode objects to strings and  [string-codec](https://www.npmjs.com/package/string-codec) to further encode those strings using one of ***hex, base64,  ascii85, base91, rot5, rot13, rot18, rot47, rev, url or punycode*** algorithms.
 
-## ```.encode_object(object, [algorithm, runs])```
+## ```.encode_object(object [,algorithm, salt])```
 
-Takes an object and encodes it using the algorithm given into a string. Default algorithm is ***base64***.
+Takes an object and encodes it using the **algorithm** given into a string, and then shuffles the string using the given **salt** value.
 
-*If you so desire, you can increase runs to re-encode the encoded string; This is often of not much use unless you are trying to further obscure your data/string.*
+**NOTE:**
+* Default algorithm is ***base64***.
 
-## ```.decode_object(string, [algorithm, runs])```
-Takes an string and decodescodes it using the algorithm given back to an object. Default algorithm is ***base64***.
+* **Salt** allows you to mangle your encoded string so that it may not be easily decoded back into the object without one knowing that value.
+
+* Default algorithm is ***changeme***.
+
+## ```.decode_object(string [,algorithm, salt])```
+Takes an string, unshuffles it using provided **salt** and then decodes it using the **algorithm** given back to an object.
+
+**NOTE:** (AS ABOVE)
 
 ## If all you need is string encoding & decoding...
 I have also exposed two other methods:
@@ -67,3 +74,8 @@ I needed hash ids that could be shared via web addresses and therefore required 
 Depending on your use case, you can choose another algorithm and see how things go.
 
 Install ```dev dependecies``` and run test.js to see how they compare.
+
+# A Note on Security
+The default *salt* value is **'changeme'** so please use your own. Like passwords, choose a strong salt value.
+
+Please do not encode sensitive data like passwords within your objects. This library is not built with security in mind. The ultimate goal was to simply encode objects into strings so be wise & keep your sensitive data safe!
