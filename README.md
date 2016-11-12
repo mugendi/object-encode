@@ -32,13 +32,17 @@ var object = {
   }
 };
 
+var salt = ')*myNewAWESOME-salt254@%^&%';
+
 //encode object using specified algorithm
-var encodedString = objCodec.encode_object( object);
-console.log(encodedString);
+var encodedString = objCodec.encode_object( object, 'base64', salt );
 
 //decode string back to the object
-var decodedObject = objCodec.decode_object(encodedString);   
+var decodedObject = objCodec.decode_object(encodedString, 'base64', salt );
+
+console.log(encodedString);
 console.log(decodedObject);
+
 
 ```
 
