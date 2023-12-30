@@ -3,6 +3,11 @@
 
 
 # Object Encode 
+This module has been used in production a few times already and I haven't had any issues raised so far. The latest update was only to write better tests using [jest](https://www.npmjs.com/package/jest).
+
+I would love to hear about what you build using **Object Encode**.
+
+# Intro
 Sometimes you need to safely encode an object into a string and then decode it back into an object.
 
 # My Use Case
