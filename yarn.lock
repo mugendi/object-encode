@@ -1883,11 +1883,6 @@ json5@^2.2.3:
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
-juri@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/juri/-/juri-1.0.3.tgz#4055bf952fc867d1ad44c427769309eb29f5b323"
-  integrity sha512-ARxzFFY6FnmMtTejPKLfcHSVV+AN11xquK4aNaWBA/5adTAiSKxs5lIYhft2vxHH6M1HGXTY17PA462sX0zN7g==
-
 kleur@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
@@ -2199,11 +2194,6 @@ qs@^6.1.0:
   integrity sha512-tDNIz22aBzCDxLtVH++VnTfzxlfeK5CbqohpSqpJgj1Wg/cQbStNAz3NuqCs5vV+pjBsK4x4pN9HlVh7rcYRiA==
   dependencies:
     side-channel "^1.0.4"
-
-random-object@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/random-object/-/random-object-1.3.4.tgz#33c4cbca76f06d9bdb68adfc45d527c7a15f5b7a"
-  integrity sha512-OLAiU6kbUqBT1Pwv+R9KmCKFLOeauyt6MxDe+c35kERwRvO/8yY5WTfkey7QRVm5Gt3S0FMqzwPee0estFTRPg==
 
 react-is@^18.0.0:
   version "18.2.0"

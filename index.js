@@ -1,4 +1,3 @@
-const juri = require('juri')();
 const codec = require('string-codec');
 var ss = require('seededshuffle');
 
@@ -67,10 +66,10 @@ function decode(str, algorithm, salt) {
 
 function encode_object(object, algorithm, salt, remove_padding) {
   if (typeof object !== 'object') {
-    throw new Error('You can only encode objects using this method');
+    throw new Error('You can only encode objects using this method.');
   }
 
-  var str = juri.encode(object);
+  var str = JSON.stringify(object);
   // console.log(str, str.length)
   str = encode(str, algorithm, salt, remove_padding);
   // console.log(str);
@@ -86,7 +85,7 @@ function decode_object(string, algorithm, salt, remove_padding) {
 
   try {
     string = decode(string, algorithm, salt, remove_padding);
-    object = juri.decode(string);
+    object = JSON.parse(string);
   } catch (e) {
     object = {
       ':ERROR:': {
