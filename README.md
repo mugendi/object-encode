@@ -63,6 +63,8 @@ This module uses [juri](https://www.npmjs.com/package/juri) to encode/decode obj
 Takes an object and encodes it using the **algorithm** given into a string, and then shuffles the string using the given **salt** value.
 
 **NOTE:**
+* `encode_object()` uses `JSON.stringify` methods. As such, only pass objects that can be stringified safely. Things like circular references and functions will throw an error.
+
 * Default algorithm is ***base64***.
 
 * **Salt** allows you to mangle your encoded string so that it may not be easily decoded back into the object without one knowing that value.
