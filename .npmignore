@@ -3,3 +3,4 @@ config/firebase.json
 config/redis.json
 *.ico
 *.ini
+.vscode
