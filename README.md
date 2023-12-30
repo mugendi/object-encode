@@ -3,11 +3,6 @@
 
 
 # Object Encode 
-This module has been used in production a few times already and I haven't had any issues raised so far. The latest update was only to write better tests using [jest](https://www.npmjs.com/package/jest).
-
-I would love to hear about what you build using **Object Encode**.
-
-# Intro
 Sometimes you need to safely encode an object into a string and then decode it back into an object.
 
 # My Use Case
@@ -90,7 +85,9 @@ Depending on your use case, you can choose another algorithm and see how things 
 
 Install ```dev dependecies``` and run test.js to see how they compare.
 
-# A Note on Security
+# A Note On Security
 The default *salt* value is **'changeme'** so please use your own. Like passwords, choose a strong salt value.
 
 Please do not encode sensitive data like passwords within your objects. This library is not built with security in mind. The ultimate goal was to simply encode objects into strings so be wise & keep your sensitive data safe!
+
+
